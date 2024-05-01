@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Other Posts</title>
+    <style>
+      .post {
+        margin-bottom: 20px;
+      }
+      .post img {
+        max-width: 200px;
+        cursor: pointer;
+      }
+      .post img:hover {
+        max-width: 300px;
+      }
+      .post-info {
+        margin-top: 10px;
+      }
+    </style>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 img {
+        width: 150px; /* Adjust the size of the logo as needed */
+        margin-right: 10px; /* Add some space between the logo and title */
+      }
+      #other-posts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #other-posts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .post {
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        width: 300px;
+      }
+      .post img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      .post img:hover {
+        transform: scale(1.05);
+      }
+      .post-info {
+        padding: 15px;
+        background-color: #f3f3f3;
+        border-top: 1px solid #ddd;
+      }
+      .post-info p {
+        margin: 5px 0;
+      }
+      a.button {
+        display: block;
+        width: 150px;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      a.button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    <script>
+      function enlargeImage(imageSrc) {
+        document.getElementById("enlarged-image").src = imageSrc;
+        document.getElementById("enlarged-image-container").style.display =
+          "block";
+      }
+
+      function closeEnlargedImage() {
+        document.getElementById("enlarged-image-container").style.display =
+          "none";
+      }
+    </script>
+  </head>
+  <body>
+    <h1><img src="logo.png" alt="Logo" />- Sve objave</h1>
+    <div id="other-posts-container">
+      <!-- Post 1 -->
+      <div class="post">
+        <img
+          src="post1.jpg"
+          alt="Post 1"
+          onmouseover="playSong('song1.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: U potrazi za dubljim smislom, kroz leću vremena. #Werther
+            #DubokaRazmišljanja #Misterija #Pustolovina #Književnost #Klasik
+            #21stoljeće
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 7. Travnja 2024.</p>
+        </div>
+      </div>
+      <!-- Post 2 -->
+      <div class="post">
+        <img
+          src="post2.jpg"
+          alt="Post 2"
+          onmouseover="playSong('song2.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: U tišini prirode pronalazim sebe. #Werther #Priroda
+            #Razmišljanje #PoezijaPejzaža #Planine #Jezero #Duhovnost
+            #21stoljeće
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 22. Ožujka 2024.</p>
+        </div>
+      </div>
+      <!-- Post 3 -->
+      <div class="post">
+        <img
+          src="post3.jpg"
+          alt="Post 3"
+          onmouseover="playSong('song3.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: Klasična ljepota u melodijama dana. #Werther #Klavir
+            #Elegancija #Umjetnost #KlasičnaGlazba #Inspiracija #21stoljeće
+            @Charlotte
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 12. Ožujka 2024.</p>
+        </div>
+      </div>
+      <!-- Post 4 -->
+      <div class="post">
+        <img
+          src="post4.jpg"
+          alt="Post 4"
+          onmouseover="playSong('song4.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: Stranice iz mog dnevnika, svjedoci vremena. #Werther #Dnevnik
+            #Pisanje #Misli #Notizen #Poezija #21stoljeće
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 7. Veljaće 2024.</p>
+        </div>
+      </div>
+      <!-- Post 5 -->
+      <div class="post">
+        <img
+          src="post5.jpg"
+          alt="Post 5"
+          onmouseover="playSong('song5.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: U društvu knjiga i umjetnosti, pronalazim mir. #Werther
+            #Čitanje #Umjetnost #Skulpture #Golubovi #SunčevZalazak #More
+            #NijeGreenScreen #21stoljeće felis.
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 27. Siječnja 2024.</p>
+        </div>
+      </div>
+      <!-- Post 6 -->
+      <div class="post">
+        <img
+          src="post6.jpg"
+          alt="Post 6"
+          onmouseover="playSong('song6.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: U dubinama šume, gdje se priča lova ispisuje. #Werther #Lov
+            #Šuma #Mistično #ZlatnoSvjetlo #Priroda #21stoljeće
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 2. Siječnja 2024.</p>
+        </div>
+      </div>
+      <!-- Post 7 -->
+      <div class="post">
+        <img
+          src="post7.jpg"
+          alt="Post 7"
+          onmouseover="playSong('song7.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: Mjesto našeg prvog susreta, trenutak koji mijenja sve.
+            #Werther #PrviSusret #Selo #Priroda #Romantika #21stoljeće
+            @Charlotte
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 19. Rujna 2023.</p>
+        </div>
+      </div>
+      <!-- Post 8 -->
+      <div class="post">
+        <img
+          src="post8.jpg"
+          alt="Post 8"
+          onmouseover="playSong('song8.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: Ključ srca u svijetu umjetnosti i tajni. #Werther #Srce
+            #Umjetnost #Tajna #Ključ #Ljubav #21stoljeće
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 1. Kolovoza 2024.</p>
+        </div>
+      </div>
+      <!-- Post 9 -->
+      <div class="post">
+        <img
+          src="post9.jpg"
+          alt="Post 9"
+          onmouseover="playSong('song9.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>
+            Opis: Zalazak sunca koji svjedoči neizrecivoj povezanosti. #Werther
+            #Zajedno #PovijesniTrenutak #Romantika #Ljubav #21stoljeće
+            @Charlotte
+          </p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 11. Srpnja 2024.</p>
+        </div>
+      </div>
+      <!-- Post 10 -->
+      <div class="post">
+        <img
+          src="post10.jpg"
+          alt="Post 10"
+          onmouseover="playSong('song10.mp3')"
+          onmouseout="stopSong()"
+        />
+        <div class="post-info">
+          <p>Opis: Ja nakon lobotomije</p>
+          <p>#Mem #Smiješno #Urlaona #Lobotomija #Filter</p>
+          <p>Autor: Werther</p>
+          <p>Objavljeno: 8. Siječnja 2023.</p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="enlarged-image-container"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+      "
+    >
+      <img id="enlarged-image" style="max-height: 90vh; margin-top: 5vh" />
+      <button
+        onclick="closeEnlargedImage()"
+        style="position: fixed; top: 10px; right: 10px"
+      >
+        Close
+      </button>
+      <audio id="audio" style="display: none"></audio>
+      <script>
+        var audio = document.getElementById("audio");
+
+        function playSong(songSrc) {
+          audio.src = songSrc;
+          audio.play();
+        }
+
+        function stopSong() {
+          audio.pause();
+          audio.currentTime = 0;
+        }
+      </script>
+    </div>
+
+    <a href="index.html">Početna stranica</a>
+  </body>
+</html>
